@@ -28,20 +28,27 @@ namespace ProbabilityTheory
             //sum = sum / sumStud;
             //Console.WriteLine(1 - sum);
 
-            for (int i = 342; i <= 365; i++)
+            for (int i = 1; i <= 365; i++)
             {
                 sum = sum * i;
             }
             Console.WriteLine(sum);
-
+            Console.WriteLine(new string ('-',50));
             BigInteger sum2 = 1;
             for (UInt64 i = 1; i <= 23; i++)
             {
                 sum2 = sum2 * i;
             }
-           
             Console.WriteLine(sum2);
-            Console.WriteLine(sum / sum2);
+            Console.WriteLine(new string('-', 50));
+            BigInteger sum3 = 1;
+            for (int i = 1; i < 342; i++)
+            {
+                sum3 *= i;
+            }
+            Console.WriteLine(sum3);
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine((sum) / (sum2*sum3));
 
         }
     }
