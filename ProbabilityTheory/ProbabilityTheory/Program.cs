@@ -30,14 +30,14 @@ namespace ProbabilityTheory
 
             for (int i = 1; i <= 365; i++)
             {
-                sum = sum * i;
+                sum *= i;
             }
             Console.WriteLine(sum);
-            Console.WriteLine(new string ('-',50));
+            Console.WriteLine(new string('-', 50));
             BigInteger sum2 = 1;
             for (UInt64 i = 1; i <= 23; i++)
             {
-                sum2 = sum2 * i;
+                sum2 *= i;
             }
             Console.WriteLine(sum2);
             Console.WriteLine(new string('-', 50));
@@ -48,7 +48,7 @@ namespace ProbabilityTheory
             }
             Console.WriteLine(sum3);
             Console.WriteLine(new string('-', 50));
-            Console.WriteLine((sum) / (sum2*sum3));
+            Console.WriteLine((sum) / (sum2 * sum3));
 
         }
     }
